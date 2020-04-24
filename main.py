@@ -11,6 +11,7 @@ class NumberInput():
     __size = [0,0]
     def __init__(self,value=0):
         self.__font = pygame.font.SysFont("Arial",24)
+        self.__strValue=str(value)
         
     def render(self):
         textBlock = self.__font.render(self.__strValue , True , (74,74,74))
